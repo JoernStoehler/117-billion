@@ -1,0 +1,14 @@
+{
+    "id": "AD0517-John-Doe",
+    "name": "John Doe",
+    "birth-date": "January 11th 517 A.D.",
+    "death-date": "February 12th 583 A.D.",
+    "biographies": [
+        "John Doe was born in the early days of the Dark Ages, during a time when the Roman Empire was in decline. He hailed from a small village on the outskirts of the empire, where he lived a simple life as a farmer.",
+        "Throughout his life, John was known for his kindness and wisdom. He often mediated disputes in his village and was respected by all who knew him. John's life, although seemingly ordinary, was filled with moments of joy, hardship, and adventure.",
+        "John passed away peacefully in his sleep in the winter of 583 A.D. His legacy, however, lives on. His tales are told around campfires, and his teachings are still practiced in the village where he once lived."
+    ],
+    "path-pic": "generated/AD0517-John-Doe.png",
+    "path-page": "generated/AD0517-John-Doe.html",
+    "path-json": "generated/AD0517-John-Doe.json"
+}
