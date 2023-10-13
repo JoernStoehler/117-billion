@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe Biography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .biography {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .biography img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+        .biography h1 {
+            margin: 20px 0;
+            font-size: 24px;
+        }
+
+        .biography p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .biography {
+                padding: 10px;
+            }
+
+            .biography h1 {
+                font-size: 20px;
+            }
+
+            .biography p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="biography">
+        <h1>John Doe</h1>
+        <p>* M.A. 517 A.D. <br> + 47.2. 583 A.D.</p>
+        <img src="generated/AD0517-John-Doe.png" alt="John Doe Picture">
+        <p>I was born on the coldest day of winter in the year of the lord 517. Like my parents, and their parents before them, I...</p>
+    </div>
+</body>
+
+</html>
