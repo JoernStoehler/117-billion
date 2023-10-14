@@ -44,24 +44,18 @@
             color: #333;
         }
 
-        .coffee-button, .random-button {
+        .random-button {
             position: absolute;
             top: 10px;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            background-color: #FFDD00;
-            color: #333;
-            font-weight: bold;
-        }
-
-        .coffee-button {
-            left: 10px;
-        }
-
-        .random-button {
             right: 10px;
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+        }
+
+        .random-button img {
+            width: 40px;
+            height: 40px;
         }
 
         @media only screen and (max-width: 600px) {
@@ -82,8 +76,12 @@
 
 <body>
     <div class="biography">
-        <button class="coffee-button" onclick="location.href='https://www.buymeacoffee.com/'">Buy Me A Coffee</button>
-        <button class="random-button" onclick="location.href='../index.html'">Random</button>
+        <a href="https://www.buymeacoffee.com/yourusername" target="_blank">
+            <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important; position: absolute; top: 10px; left: 10px;" >
+        </a>
+        <button class="random-button" onclick="location.href='../index.html'">
+            <img src="https://cdn-icons-png.flaticon.com/512/752/752569.png" alt="Random Dice"> <!-- A placeholder dice image. You might want to host this on your server or find a different one. -->
+        </button>
         <h1>John Doe</h1>
         <p>* M.A. 517 A.D. <br> + 47.2. 583 A.D.</p>
         <img src="AD0517-John-Doe.png" alt="John Doe Picture">
