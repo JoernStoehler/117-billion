@@ -8,85 +8,64 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            text-align: center;
             margin: 0;
             padding: 0;
+        }
+
+        header {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            justify-content: space-between;
+            padding: 10px 20px;
             background-color: #f4f4f4;
         }
 
-        .biography {
-            position: relative;
-            max-width: 800px;
-            width: 100%;
-            background-color: #ffffff;
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
+        #coffee-btn img {
+            height: 50px;  /* Adjusted size */
+            width: auto;
         }
 
-        .biography img {
-            width: 100%;
-            max-height: 300px;
-            object-fit: cover;
-        }
-
-        .biography h1 {
+        #profile-pic {
+            max-width: 100%;
+            height: auto;
             margin: 20px 0;
-            font-size: 24px;
         }
 
-        .biography p {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #333;
-        }
-
-        .random-button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            border: none;
+        #redo-btn {
+            display: block;
+            width: 50px;
+            height: 50px;
+            margin: 20px auto;
+            border-radius: 50%;  /* Makes it circular */
+            border: 3px solid #333;
+            line-height: 44px;
+            text-align: center;
+            font-size: 20px;
             cursor: pointer;
-            background-color: transparent;
+            background-color: #f4f4f4;
         }
 
-        .random-button img {
-            width: 40px;
-            height: 40px;
-        }
-
-        @media only screen and (max-width: 600px) {
-            .biography {
-                padding: 10px;
-            }
-
-            .biography h1 {
-                font-size: 20px;
-            }
-
-            .biography p {
-                font-size: 14px;
-            }
+        #redo-btn:hover {
+            background-color: #ddd;
         }
     </style>
 </head>
 
 <body>
-    <div class="biography">
+    <header>
         <a href="https://www.buymeacoffee.com/yourusername" target="_blank">
-            <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important; position: absolute; top: 10px; left: 10px;" >
+            <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" id="coffee-btn">
         </a>
-        <button class="random-button" onclick="location.href='../index.html'">
-            <img src="https://cdn-icons-png.flaticon.com/512/752/752569.png" alt="Random Dice"> <!-- A placeholder dice image. You might want to host this on your server or find a different one. -->
-        </button>
-        <h1>John Doe</h1>
-        <p>* M.A. 517 A.D. <br> + 47.2. 583 A.D.</p>
-        <img src="AD0517-John-Doe.png" alt="John Doe Picture">
-        <p>I was born on the coldest day of winter in the year of the lord 517. Like my parents, and their parents before them, I...</p>
+    </header>
+    <div>
+        <h2>John Doe</h2>
+        <p>🌟 M.A. 517 A.D.</p>
+        <p>✝️ 47.2. 583 A.D.</p>
+        <img id="profile-pic" src="AD0517-John-Doe.png" alt="John Doe">
+        <p>I was born on the coldest day of the winters in the year of the lord 517. Like my parents, and their parents before them, I...</p>
+        <div id="redo-btn">↻</div>
     </div>
 </body>
 
 </html>
+
