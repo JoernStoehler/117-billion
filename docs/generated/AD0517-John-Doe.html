@@ -18,12 +18,13 @@
         }
 
         .biography {
+            position: relative;
             max-width: 800px;
             width: 100%;
             background-color: #ffffff;
             padding: 20px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;  /* Added for centering */
+            text-align: center;
         }
 
         .biography img {
@@ -41,6 +42,26 @@
             font-size: 16px;
             line-height: 1.6;
             color: #333;
+        }
+
+        .coffee-button, .random-button {
+            position: absolute;
+            top: 10px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #FFDD00;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .coffee-button {
+            left: 10px;
+        }
+
+        .random-button {
+            right: 10px;
         }
 
         @media only screen and (max-width: 600px) {
@@ -61,9 +82,11 @@
 
 <body>
     <div class="biography">
+        <button class="coffee-button" onclick="location.href='https://www.buymeacoffee.com/'">Buy Me A Coffee</button>
+        <button class="random-button" onclick="location.href='../index.html'">Random</button>
         <h1>John Doe</h1>
         <p>* M.A. 517 A.D. <br> + 47.2. 583 A.D.</p>
-        <img src="AD0517-John-Doe.png" alt="John Doe Picture">  <!-- Fixed image path -->
+        <img src="AD0517-John-Doe.png" alt="John Doe Picture">
         <p>I was born on the coldest day of winter in the year of the lord 517. Like my parents, and their parents before them, I...</p>
     </div>
 </body>
